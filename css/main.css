@@ -1,0 +1,634 @@
+
+body{
+    font-family:'Tenali Ramakrishna', sans-serif;
+    font-size: 25px;
+    color: #4d4d4d;
+    margin: 0;
+    padding: 0;
+}
+.title{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 80px;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (max-width:  576px){
+    .title{
+        font-size: 60px;
+    }
+}
+
+/* Start NavBar*/
+.navbar-brand{
+    font-family: "Kaushan Script", cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+.navbar-brand span{
+    color: #ffffff
+}
+.bg-dark{
+    background:linear-gradient(#bf7582 30%, rgba(191, 117, 131, 0.884));
+    
+    border-color: transparent;
+}
+/*.bg-dark .scrolled{
+    background:linear-gradient(#bf7582 30%, rgba(191, 117, 131, 0.884))!important;;
+}*/
+.navbar-nav .nav-link{
+    margin-left: 20px;
+    font-size: 23px;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #ffffff
+}
+/* End NavBar*/
+/* Start Header*/
+.header{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image:linear-gradient(rgb(191,117,130,0.9), rgba(191,117,130,0.9)), url("../image/head.jpg");
+    height: 700px;
+    color:#fff;
+}
+
+.header img{
+    width: 200px;
+    height: 200px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+
+}
+.header h1{
+    font-family: "Kaushan Script", cursive;
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 300;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    
+}
+@media (max-width:  576px){
+    .header h1{
+        font-size: 34px;
+    }
+    .header p{
+        font-size: 20px;
+    }
+}
+.header p{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.header a{
+    font-size: 30px;
+    padding-right: 25px;
+    color:#fff;
+    text-decoration: none;
+}
+ .icon-angle-down:after{
+        font-family: "FontAwesome";
+        content: "\F107";
+        font-style: normal;
+}
+.header .arow{
+    color:#fff;
+    width: 40px;
+   font-weight: bold;
+    opacity: .7;
+    font-size: 55px;
+    color: #fff;
+}
+.header a:hover{
+    color: #fff;
+    opacity: 1;
+}
+/* End Header*/
+
+/* Start About Me*/
+.about{
+    padding: 70px 0;
+}
+.about ul li{
+    margin-bottom: 20px;
+}
+.about .first{
+    width: 40%;
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+}
+@media(max-width: 768px){
+    .about .about-ul {
+        float: none;
+    }
+}
+.about .second{
+    width: 60%;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.5);
+}
+.about .info{
+    color: #4d4d4d;
+    margin-left: 50px;
+}
+@media(max-width: 768px){
+    .about .info{
+        margin-left: 0;
+    }
+}
+/* End About Me*/
+
+/* Start Resume*/
+.resume{
+    padding: 70px 0;
+}
+@media (max-width: 768px){
+    .resume  {
+        padding: 40px 0;
+
+    }
+}
+.resume .timeline{
+    position: relative;
+    padding: 30px 0 20px;
+}
+.resume .timeline-heading div h3{
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    background: #e6e6e6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    color: #000;
+    margin-bottom: 30px;
+}
+@media (max-width: 768px){
+    .resume .timeline .timeline-heading > div h3 {
+        float: left;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+}
+.resume .timeline:before {
+    content: " "; 
+    top: 40px;
+    bottom: 0;
+    position: absolute;
+    width: 2px;
+    background-color: #e6e6e6;
+    left: 50%;
+    margin-left: 0;
+}
+@media (max-width: 768px){
+    .resume .timeline:before {
+        left: 30px;
+    }
+}
+.resume .timeline > li > .timeline-badge {
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -21px;
+    background-color: #bf7582;
+    z-index: 100;
+    display: table;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+.resume .timeline > li > .timeline-badge i {
+    font-size: 16px;
+
+}
+@media (max-width: 768px){
+    .resume .timeline > li > .timeline-badge {
+        left: 30px;
+    }
+}
+.resume .fa-graduation-cap:before {
+    font-family: "FontAwesome";
+    content: "\f19d";
+    font-style: normal;
+}
+.resume .icon-suitcase:before {
+    font-family: "FontAwesome";
+    content: "\f0f2 ";
+    transform: rotate(-5deg);
+    font-style: normal;
+}
+.resume .timeline li{
+    position: relative;
+    margin-bottom: 20px;
+}
+.resume .timeline > li > .timeline-panel-left {
+    width: 45%;
+    float: left;
+    margin-bottom: 0;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+@media (max-width: 768px){
+    .resume .timeline > li > .timeline-panel-left{
+        left: 100px;
+        width: 75%;
+    }
+}
+.resume .timeline > li > .timeline-panel-right {
+    width: 45%;
+    float: right;
+    margin-bottom: 0;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px){
+    .resume .timeline > li > .timeline-panel-right{
+        float: left;
+        left: 100px;
+        width: 75%;
+    }
+}
+.timeline > li:after {
+    clear: both;
+}
+.resume .uni-name{
+    display: block;
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: normal;
+    color: #bfbfbf;
+}
+@media (max-width:  576px){
+    .resume .uni-name{
+        font-size: 18px;
+    }
+}
+.timeline > li:before,
+ .timeline > li:after {
+    content: " ";
+    display: table;
+}
+.resume .timeline-title{
+    color: #000;
+    font-weight: 500;
+    font-size: 35px;
+}
+/* End Resume*/
+
+/*Start Elementor*/
+.elementor{
+    background-color: #e6e6e6;
+
+    padding: 50px;
+}
+.elementor h1{
+    padding-bottom: 60px;
+}
+.elementor .element{
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+    margin-bottom: 30px;
+    color: #bf7582;
+}
+.elementor .element:hover{
+    color:#bf7582;
+}
+.elementor p{
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.elementor span{
+    font-weight: 700;
+    color: #4d4d4d;
+}
+/*End Elementor*/
+/* End Research*/
+.research{
+    padding: 70px 0;
+    background-color: #bf7582;
+    height: 600px;
+    color: #fff;
+}
+.research .title{
+    color: #fff;
+}
+.research img {
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 136px;
+      height: 136px;
+      margin: auto;
+      display: block;
+      color: #f2f2f2;
+      font-size: 18px;
+      line-height: 46px;
+      text-align: center;
+      position: relative;
+      border-radius: 50%;
+      box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+      -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+      -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+      -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+      margin-bottom: 210px;
+  }
+  @media (max-width: 576px){
+    .research img {
+        margin-bottom: 270px;
+
+    }
+}
+  .research h5{
+    font-size: 35px;
+    font-weight: 500;
+  }
+.research p{
+        font-size: 25px;
+        line-height: 1.4;
+        margin-bottom: 50px;   
+}
+.carousel-indicators{
+    bottom: 0;
+
+}
+.carousel-indicators li{
+    height: 15px;
+    width: 15px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    height: 16px;
+    width: 16px;
+    background: #e6e5e5;
+    border-radius: 50%;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    padding: 50px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+   width: 30px;
+   height: 30px;
+}
+/* Start Research*/
+
+/* Start Skills*/
+.skills{
+    padding: 100px 0;
+}
+.skills .caption{
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.skills .caption p{
+    margin: 0;
+}
+.skills .caption span{
+    float: right;
+}
+.skills .progress .progress-bar{
+    background-color: #bf7582;
+    font-size: 20px;
+}
+.skills .progress{
+    margin-bottom: 20px;
+}
+.skills .chart {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 40px auto;
+    position: relative;
+    text-align: center;
+}
+.skills .chart span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -30px;
+}
+.skills .chart span strong {
+    display: block;
+}
+.skills .chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.skills audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+    transform: rotate(90deg)
+} 
+
+.skills  ul {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.skills  ul li{
+    margin-bottom: 10px;
+
+
+}
+.skills  ul li:before {
+    font-family: "FontAwesome";
+    content: "\f05d"; 
+    margin-right: 7px;
+    font-size: 16px;
+    color: #bf7582;
+    position: relative;
+    top: -1px;
+}
+.skills .another-skills{
+    padding-top:20px;
+}
+
+@media(max-width: 992px){
+    .skills  ul {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .skills  ul li{
+        margin-bottom: 5px;
+}
+}                                                  
+/* End Skills*/
+
+/* Start Work*/
+.work{
+    margin: 0;
+    padding: 70px 0;
+    background-color: #e6e6e6;
+    height: auto;
+    color: rgb(82, 81, 81);
+}
+
+ .work .cont {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+  @media (max-width:  576px){
+    .work .cont {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+@media (max-width:  768px){
+    .work .cont {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+   .work .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        box-shadow: 0 0 2px 1px rgba(82, 81, 82, 0.5);
+
+  }
+  
+  .work .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(191,117,130,0.9);
+  }
+  
+  .work .cont:hover .overlay {
+    opacity: 1;
+  }
+  
+  .work .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .work .icon-link:before{
+    font-family: "FontAwesome";
+    content: "\f0c1";
+    color: #fff;
+  }
+/* End Work*/
+
+/* Start Footer*/
+.footer{
+    padding-top: 70px ;
+    background-color: #bf7582;
+    height:370px;
+    color: #fff;
+}
+.footer .logo a{
+    text-decoration: none;
+}
+.footer .logo span{
+    font-family: "Kaushan Script", cursive;
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+}
+.footer .quote p{
+    line-height: 1;
+    margin: 30px;
+    opacity: 0.7;
+}
+.footer .social a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255);
+}
+.footer .social i.fa{
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid  rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    margin-right: 20px;
+}
+.footer .social a:hover{
+    color: rgba(191,117,130,0.9);
+}
+.footer  i.fa:hover{
+    background-color: rgba(255, 255, 255, 0.918);
+}
+
+/* End Footer*/
+/* Start CopyRight*/
+.copyright{
+    /*background-color: #a76571;*/
+    height: 50px;
+    font-size: 20px;
+    margin: 0;
+}
+.copyright p{
+    color: #fff;
+    margin-top: 30px;
+    opacity: 0.7;
+
+}
+.copyright .fa .fa-heart-o:after{
+    font-size: 10px;
+  font-style: normal;
+}
+/* End CopyRight*/
